@@ -1,0 +1,122 @@
+/* Main Styles for H1B Visa LCA Database */
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+header {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+/* Table styles */
+.table {
+    font-size: 0.9rem;
+}
+
+.table th {
+    background-color: #f1f5fe;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Responsive table */
+.table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Pagination styles */
+.pagination .page-link {
+    color: #0d6efd;
+    border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+/* Stats card */
+.stat-item {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-weight: 500;
+}
+
+.top-employer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+/* Search filter styles */
+.form-label {
+    font-weight: 500;
+}
+
+/* Detail view styles */
+.detail-row {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Loading overlay */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* Mobile optimizations */
+@media (max-width: 767.98px) {
+    .table {
+        font-size: 0.8rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
